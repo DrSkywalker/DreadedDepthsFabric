@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "depths",
+	"version": "${version}",
+	"name": "Dreaded Depths",
+	"description": "Traverse eerie tunnels, solve cryptic puzzles, and confront terrifying entities as you unravel the dark secrets hidden within.",
+	"authors": [
+		"DrSkywalker"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/dreaded-depths",
+		"sources": "https://github.com/DrSkywalker/DreadedDepthsFabric"
+	},
+	"license": "MIT",
+	"icon": "Icon.jpg",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lee.depths.Depths"
+		],
+		"fabric-datagen": [
+			"lee.depths.DepthsDataGenerator"
+		]
+	},
+	"mixins": [
+		"depths.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
